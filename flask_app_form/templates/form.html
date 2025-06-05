@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Submit Details</title>
+    </head>
+    
+    <body>
+        {% if error %}
+        <p style="color: red">{{ error }}</p>
+        {% endif %}
+        <form method="post">
+            <label>User ID:</label>
+            <input type="text" name="userID" placeholder="Enter your User ID"><br>
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="Enter your Password"><br>
+            <input type="submit" value="Submit"><br>
+        </form>
+    </body>
+</html>
